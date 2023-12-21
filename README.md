@@ -1,2 +1,7 @@
-#Hi 
-##This is a Responsive navigation bar.
+# Responsive navigation bar
+
+## Features
+- Responsive design for mobile.
+- Clear and intuitive navigation structure.
+
+
