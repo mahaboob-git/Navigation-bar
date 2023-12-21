@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+#logo {
+    color: #f18f0f;
+}
+
+#logo span {
+    color: rgb(255, 255, 255);
+
+}
+
+nav {
+    background-color: #191e24f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 50px;
+    box-shadow: 10px 10px 10px rgba(31, 29, 29, 0.548);
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+}
+
+li {
+    width: 90px;
+
+}
+
+li span {
+    font-size: medium;
+}
+
+li a {
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px 15px;
+    transition: 0.5s;
+    color: white;
+}
+
+li a:hover {
+    transition: 0.2s;
+    color:#f18f0f;
+    text-decoration: underline;
+}
+
+.hide {
+    top: 70px;
+}
+
+nav ul {
+    margin-left: 500px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .lines {
+        display: block;
+        height: 3px;
+        width: 35px;
+        background-color: #ffffff;
+    }
+
+    .lines-rotate {
+        border-radius: 5px;
+        background-color: #000000;
+    }
+
+    nav {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -300px;
+        right: 0;
+        background-color: rgb(255, 200, 200);
+        padding: 35px 0;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 5px 5px rgba(128 128 128 0.363);
+        transition: 0.4s ease-in-out;
+    }
+
+    li a {
+        color: black;
+    }
+
+    li {
+        text-align: center;
+        width: 90vw;
+    }
+
+    li a:hover {
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+}
